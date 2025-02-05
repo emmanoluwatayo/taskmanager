@@ -466,7 +466,7 @@ class _CompleteRegistrationScreenState extends State<CompleteRegistrationScreen>
                                       child: AuthButton(
                                         title: 'Submit',
                                         onTap: () {
-                                          // completeRegistration();
+                                          completeRegistration();
                                         },
                                       ),
                                     ),

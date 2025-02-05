@@ -32,6 +32,8 @@ class AppColors {
 
   static Color warningColor = const Color(0xFFE2B93B);
 
+  static Color warColor = const Color(0xFFFFED);
+
   static Color greyColor = const Color(0xFFEBEBEB);
 
   static Color infoColor = const Color(0xFF2F80ED);

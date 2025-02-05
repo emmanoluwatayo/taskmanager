@@ -7,6 +7,7 @@ import 'package:task_manager/presentaion/application/authentication/entry_screen
 import 'package:task_manager/presentaion/application/authentication/forget_password/forget_password.dart';
 import 'package:task_manager/presentaion/application/authentication/login/login.dart';
 import 'package:task_manager/presentaion/application/authentication/registration/registration_screen.dart';
+import 'package:task_manager/presentaion/application/main_navigation/main_navigation_screen.dart';
 import 'package:task_manager/presentaion/application/splash_screen/splash_screen.dart';
 
 class AppRoutes {
@@ -73,13 +74,13 @@ class AppRouteConfig {
           return const CompleteRegistrationScreen();
         },
       ),
-      // GoRoute(
-      //   path: '/${AppRoutes.mainNavigationScreen}',
-      //   name: AppRoutes.mainNavigationScreen,
-      //   builder: (BuildContext context, GoRouterState state) {
-      //     return const MainNavigationScreen();
-      //   },
-      // ),
+      GoRoute(
+        path: '/${AppRoutes.mainNavigationScreen}',
+        name: AppRoutes.mainNavigationScreen,
+        builder: (BuildContext context, GoRouterState state) {
+          return const MainNavigationScreen();
+        },
+      ),
     ],
     errorPageBuilder: (BuildContext context, GoRouterState state) {
       return MaterialPage(

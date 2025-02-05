@@ -137,14 +137,14 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
             decoration: const BoxDecoration(
               border: Border(
                 bottom: BorderSide(
-                  color: AppColors.liteAccentColor,
+                  color: AppColors.vistaYellow,
                   width: 1.0,
                 ),
               ),
             ),
           ),
           automaticallyImplyLeading: false,
-          backgroundColor: AppColors.rateConColor3,
+          backgroundColor: AppColors.symptomOptionConColor,
           elevation: 0,
           centerTitle: true,
           actions: [
@@ -153,7 +153,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
                 if (state.processingStatus == ProcessingStatus.waiting) {
                   return const Center(
                     child: SpinKitCircle(
-                      color: AppColors.primaryColor,
+                      color: AppColors.vistaYellow,
                     ),
                   );
                 } else if (state.processingStatus == ProcessingStatus.error) {
@@ -187,7 +187,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
                         border: Border.all(
-                          color: AppColors.rateConColor3,
+                          color: AppColors.symptomOptionConColor,
                           width: 1,
                         ),
                       ),
@@ -238,9 +238,9 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
                 onPressed: () => setState(() {
                   isExtended = !isExtended;
                 }),
-                icon: Icon(
+                icon: const Icon(
                   Icons.menu,
-                  color: AppColors.darkRedColor,
+                  color: AppColors.vistaYellow,
                   size: 20,
                 ),
               ),
@@ -265,7 +265,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
                   constraints: BoxConstraints(minHeight: constraint.maxHeight),
                   child: IntrinsicHeight(
                     child: Container(
-                      color: AppColors.rateConColor3,
+                      color: AppColors.symptomOptionConColor,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -290,14 +290,14 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
                                         AppColors.primaryColor.withOpacity(0.3),
                                     hoverColor: Colors.grey.withOpacity(0.1),
                                     selectedIconColorExpandable:
-                                        AppColors.darkRedColor,
+                                        AppColors.vistaYellow,
                                     unselectedIconColorExpandable:
                                         AppColors.greyText,
                                     selectedTitleTextStyleExpandable:
                                         getRegularStyle(
-                                      color: AppColors.darkRedColor,
+                                      color: AppColors.vistaYellow,
                                     ),
-                                    selectedColor: AppColors.darkRedColor,
+                                    selectedColor: AppColors.vistaYellow,
                                     selectedTitleTextStyle: getMediumStyle(
                                       color: Colors.white,
                                     ),
